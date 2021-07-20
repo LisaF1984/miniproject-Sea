@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sea</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <style>
+        Button {
+            Background-color: rgb(47, 120, 180);
+            color: cornsilk;
+        }
+        {font-color "blue" }
+    </style>
+</head>
+<body style="background-color: aqua">
+    <div>
+        <h1>Welcome to Lisa's virtual sea!</h1>
+        <img src= "https://wallpapercave.com/wp/wp2177157.jpg" alt="sealife image",
+        style="width:200px; height 20px"/>
+        <br/><br/>
+        <h5>Want to add your fish to Lisa's sea?</h5>
+        <h5> add your fishes details below:</h5>
+        <form method="POST">
+            <input type="text" id="fishName" name="fishName" placeholder="Name of your fish:" />
+            <input type="text" id="colour" name="colour" placeholder="Colour of your fish:" />
+            <input type="number" id="lengthInches" name="lengthInches" placeholder="How long your fish:" /><br/><br/>
+            <input type="boolean" id="coldWater" name="coldWater" placeholder="Cold water fish?:" />
+
+            <button type="sumbit" id="addFish" name="addFish">Add Fish</button><br/><br/>
+            <form method="GET">
+                <h5>Take a look at what fish Lisa's sea already has: </h5><br/><br/>
+            <div id="display"></div>
+        </form>
+       
+        </form>
+        <form method="PUT">
+            <h5>Want to make a change to your fish?</h5>
+            <input type="number" id="updateID" placeholder="Fish ID to change:" />
+            <button type="submit" id="updateBtn">Change Fish</button><br/><br/>
+        </form>
+
+        <form method="DELETE">
+            <h5>Want to take your fish out of Lisa's sea and take to your own?</h5>
+            <h5>Remove here:</h5>
+
+            <input type="number" id="removeID" placeholder="Fish ID to remove:" />
+            <button type="submit" id="rmvBtn">Remove Fish</button>
+
+        </form>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+            integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script type="text/JavaScript" src="./project-sea.js"></script>
+</body>
+
+</html>
